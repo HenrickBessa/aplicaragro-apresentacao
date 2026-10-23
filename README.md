@@ -1,6 +1,6 @@
 # AplicarAgro · Apresentação da plataforma
 
-Apresentação do AplicarAgro, plataforma web de gestão de pecuária de corte a pasto: o problema, como funciona, as telas (campo sem sinal, animais e pesagem, reprodução, parto e genealogia, custos e relatórios, parceria), os perfis de acesso, o que está por baixo e o que ainda não tem.
+Apresentação do AplicarAgro, plataforma web de gestão de pecuária de corte a pasto: o problema, como funciona, as telas (campo sem sinal, contagem física, animais e pesagem, reprodução, parto e genealogia, custos e relatórios, parceria e acerto), os perfis de acesso, o que está por baixo e o que ainda não tem.
 
 Página publicada pelo GitHub Pages. Para ver localmente, abra o `index.html` no navegador.
 
