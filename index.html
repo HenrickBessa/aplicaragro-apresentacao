@@ -7,7 +7,7 @@
     <title>AplicarAgro · Apresentação</title>
     <meta
       name="description"
-      content="AplicarAgro: plataforma web de gestão de pecuária de corte a pasto. Livro-razão do rebanho por lote e por dono, funcionando sem sinal. Telas reais, dados fictícios."
+      content="AplicarAgro: plataforma web de gestão de pecuária de corte a pasto. Livro-razão do rebanho por lote e por dono, pesagem e reprodução, funcionando sem sinal. Telas reais, dados fictícios."
     />
     <link rel="icon" href="img/icone.webp" type="image/webp" />
     <style>
@@ -393,7 +393,7 @@
           <h1 id="capa-titulo">O livro-razão do rebanho, <em>mesmo sem sinal</em></h1>
           <p class="lead">
             Plataforma web de gestão para pecuária de corte a pasto: saldo por lote e por dono, animais pelo
-            brinco, pesagem, custo por arroba e parceria com o dono do gado vendo os mesmos números.
+            brinco, pesagem, reprodução, custo por arroba e parceria com o dono do gado vendo os mesmos números.
           </p>
           <p class="selo">Telas reais da plataforma · dados 100% fictícios (Fazenda Santa Clara)</p>
         </div>
@@ -409,6 +409,8 @@
             <li><a href="#ideia">Como funciona</a></li>
             <li><a href="#campo">No pasto, sem sinal</a></li>
             <li><a href="#animais">Animais e pesagem</a></li>
+            <li><a href="#reproducao">Reprodução</a></li>
+            <li><a href="#parto">Parto e genealogia</a></li>
             <li><a href="#custos">Custos e relatórios</a></li>
             <li><a href="#parceria">Parceria</a></li>
             <li><a href="#perfis">Quem faz o quê</a></li>
@@ -538,16 +540,82 @@
               <figcaption><b>Pesar</b>Em sequência: brinco, peso, registrar.</figcaption>
             </figure>
             <figure>
-              <div class="celular"><div class="tela"><img src="img/animal.webp" alt="Ficha do brinco 501: 527 kg, ganho de 146 kg em 300 dias, 0,5 kg por dia" width="824" height="2078" loading="lazy" /></div></div>
+              <div class="celular"><div class="tela"><img src="img/animal.webp" alt="Ficha do brinco 501: 527 kg, ganho de 146 kg em 300 dias, 0,5 kg por dia" width="824" height="2214" loading="lazy" /></div></div>
               <figcaption><b>Ficha do animal</b>Peso, ganho, kg/dia e gráfico.</figcaption>
             </figure>
           </div>
         </div>
       </section>
 
+      <section id="reproducao" class="slide" aria-labelledby="reproducao-titulo">
+        <div class="wrap">
+          <p class="caps sobre">05 · Reprodução</p>
+          <h2 id="reproducao-titulo" class="titulo">Inseminação e diagnóstico no curral, pelo brinco</h2>
+          <span class="faixa" aria-hidden="true"></span>
+          <p class="lead">
+            O dono ou o gerente cadastra o sêmen em palheta ou o touro de monta: raça, registro na associação
+            (opcional) e de quem é, da fazenda ou do dono do gado. Entrada e descarte de palhetas ficam lançados, e o
+            estoque desconta sozinho cada inseminação. No curral, o vaqueiro escolhe o touro uma vez e vai pelo
+            brinco, uma vaca atrás da outra, sem sinal. No diagnóstico, a tela lista as vacas aguardando: um toque
+            marca prenhe ou vazia.
+          </p>
+          <div class="celulares">
+            <figure>
+              <div class="celular"><div class="tela"><img src="img/touros.webp" alt="Touros e sêmen: dois sêmens com o estoque de palhetas e um touro de monta" width="824" height="3086" loading="lazy" /></div></div>
+              <figcaption><b>Touros e sêmen</b>Estoque de palhetas e de quem é cada touro. <span class="rolar">Role dentro da tela.</span></figcaption>
+            </figure>
+            <figure>
+              <div class="celular"><div class="tela"><img src="img/inseminar.webp" alt="Inseminar no Pasto da Baixada: IATF com o sêmen Trovão e três vacas feitas agora" width="824" height="1848" loading="lazy" /></div></div>
+              <figcaption><b>Inseminar</b>IATF, no cio ou monta: o touro uma vez, depois só o brinco.</figcaption>
+            </figure>
+            <figure>
+              <div class="celular"><div class="tela"><img src="img/diagnostico.webp" alt="Diagnóstico no Pasto da Baixada: vacas aguardando, com os botões Prenhe e Vazia" width="824" height="2398" loading="lazy" /></div></div>
+              <figcaption><b>Diagnóstico</b>Um toque: prenhe ou vazia. <span class="rolar">Role dentro da tela.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="parto" class="slide claro" aria-labelledby="parto-titulo">
+        <div class="wrap">
+          <p class="caps sobre">06 · Parto e genealogia</p>
+          <h2 id="parto-titulo" class="titulo">O bezerro já nasce ligado à mãe e ao pai</h2>
+          <span class="faixa" aria-hidden="true"></span>
+          <p class="lead">
+            O parto é registrado na ficha da vaca, sem sinal. A plataforma cria o bezerro ligado à mãe e ao pai e
+            lança o nascimento no razão. A cria nasce do dono da mãe: se a vaca é de um parceiro, a cria entra no
+            contrato dele, para a divisão pelo percentual de crias. O brinco vai na hora do parto ou depois, na
+            desmama, com "Dar brinco".
+          </p>
+          <ul class="pontos">
+            <li><strong>Situação da vaca</strong>Aguardando diagnóstico, prenhe, vazia ou perda, com a linha do tempo e o desfazer. Prenhe mostra o parto previsto, por volta de 290 dias depois da cobertura.</li>
+            <li><strong>Genealogia na ficha</strong>Mãe, pai e filhos. Quando houve inseminação e depois monta de repasse, o pai fica marcado como "provável".</li>
+            <li><strong>Dono do gado</strong>Vê a reprodução e as crias só das vacas dele.</li>
+          </ul>
+          <div class="celulares">
+            <figure>
+              <div class="celular"><div class="tela"><img src="img/parto.webp" alt="Registrar parto na ficha da vaca brinco 105, sem sinal" width="824" height="1678" loading="lazy" /></div></div>
+              <figcaption><b>Registrar parto</b>Na ficha da vaca, mesmo sem sinal.</figcaption>
+            </figure>
+            <figure>
+              <div class="celular"><div class="tela"><img src="img/bezerro.webp" alt="Ficha da bezerra recém-nascida, sem brinco, com a mãe, o pai provável e o botão Dar brinco" width="824" height="1678" loading="lazy" /></div></div>
+              <figcaption><b>A cria</b>Mãe, pai provável e "Dar brinco" para a desmama.</figcaption>
+            </figure>
+            <figure>
+              <div class="celular"><div class="tela"><img src="img/vaca.webp" alt="Ficha da vaca brinco 103: prenhe, com o parto previsto, a linha do tempo e um filho" width="824" height="2230" loading="lazy" /></div></div>
+              <figcaption><b>Ficha da vaca</b>Prenhe, parto previsto, linha do tempo e filhos. <span class="rolar">Role dentro da tela.</span></figcaption>
+            </figure>
+          </div>
+          <p class="lead">
+            O registro na associação é um campo de anotação. A plataforma não se comunica com associação de raça
+            e não substitui o registro genealógico oficial.
+          </p>
+        </div>
+      </section>
+
       <section id="custos" class="slide" aria-labelledby="custos-titulo">
         <div class="wrap">
-          <p class="caps sobre">05 · Custos e relatórios</p>
+          <p class="caps sobre">07 · Custos e relatórios</p>
           <h2 id="custos-titulo" class="titulo">Quanto custa produzir uma arroba</h2>
           <span class="faixa" aria-hidden="true"></span>
           <p class="lead">
@@ -582,7 +650,7 @@
 
       <section id="parceria" class="slide escuro" aria-labelledby="parceria-titulo">
         <div class="wrap">
-          <p class="caps sobre">06 · Parceria</p>
+          <p class="caps sobre">08 · Parceria</p>
           <h2 id="parceria-titulo" class="titulo">O dono do gado vê o gado dele, e só o dele</h2>
           <span class="faixa" aria-hidden="true"></span>
           <p class="lead">
@@ -609,7 +677,7 @@
 
       <section id="perfis" class="slide" aria-labelledby="perfis-titulo">
         <div class="wrap">
-          <p class="caps sobre">07 · Quem faz o quê</p>
+          <p class="caps sobre">09 · Quem faz o quê</p>
           <h2 id="perfis-titulo" class="titulo">Quatro perfis, conferidos no servidor</h2>
           <span class="faixa" aria-hidden="true"></span>
           <div class="tabela">
@@ -625,21 +693,21 @@
                 <tr>
                   <th scope="row">Dono do pasto</th>
                   <td>Tudo da fazenda</td>
-                  <td>Registra e desfaz, importa o saldo, cria contratos, convida o dono do gado, responde contestações, lança custos, ajusta o rendimento de carcaça</td>
+                  <td>Registra e desfaz, importa o saldo, cria contratos, convida o dono do gado, responde contestações, lança custos, ajusta o rendimento de carcaça, cadastra touros e o estoque de sêmen</td>
                 </tr>
                 <tr>
                   <th scope="row">Gerente</th>
                   <td>Tudo da fazenda</td>
-                  <td>Registra e desfaz, cadastra e pesa animais, lança custos, vê relatórios</td>
+                  <td>Registra e desfaz, cadastra e pesa animais, cadastra touros e o estoque de sêmen, lança custos, vê relatórios</td>
                 </tr>
                 <tr>
                   <th scope="row">Vaqueiro</th>
                   <td>Os lotes e o saldo</td>
-                  <td>Registra e pesa, mesmo sem sinal; desfaz só o que ele mesmo registrou</td>
+                  <td>Registra e pesa, insemina, diagnostica e registra o parto, mesmo sem sinal; desfaz só o que ele mesmo registrou</td>
                 </tr>
                 <tr>
                   <th scope="row">Dono do gado</th>
-                  <td>Só o gado, as pesagens, os custos e os contratos dele</td>
+                  <td>Só o gado, as pesagens, a reprodução e as crias, os custos e os contratos dele</td>
                   <td>Confirma ou contesta; não registra nada. Nunca vê o gado próprio da fazenda nem o de outros donos</td>
                 </tr>
               </tbody>
@@ -654,13 +722,13 @@
 
       <section id="tecnica" class="slide escuro" aria-labelledby="tecnica-titulo">
         <div class="wrap">
-          <p class="caps sobre">08 · Por baixo do capô</p>
+          <p class="caps sobre">10 · Por baixo do capô</p>
           <h2 id="tecnica-titulo" class="titulo">Testado a cada mudança</h2>
           <span class="faixa" aria-hidden="true"></span>
           <div class="numeros">
-            <div><b>168</b><span>testes do banco: quem lê, quem grava, o que nunca se apaga</span></div>
-            <div><b>25</b><span>testes de ponta a ponta no navegador, rodados como Android e como iPhone, com e sem sinal</span></div>
-            <div><b>14</b><span>testes de cálculo: arroba, ganho de peso, valores em reais, planilha</span></div>
+            <div><b>212</b><span>testes do banco: quem lê, quem grava, o que nunca se apaga</span></div>
+            <div><b>30</b><span>testes de ponta a ponta no navegador, rodados como Android e como iPhone, com e sem sinal</span></div>
+            <div><b>24</b><span>testes de cálculo: arroba, ganho de peso, valores em reais, planilha, reprodução</span></div>
             <div><b>0</b><span>vazamentos na prova que lê direto do servidor o que chega a cada login</span></div>
           </div>
           <div class="grade g3">
@@ -682,12 +750,13 @@
 
       <section id="falta" class="slide claro" aria-labelledby="falta-titulo">
         <div class="wrap">
-          <p class="caps sobre">09 · Com honestidade</p>
+          <p class="caps sobre">11 · Com honestidade</p>
           <h2 id="falta-titulo" class="titulo">O que ainda não tem</h2>
           <span class="faixa" aria-hidden="true"></span>
           <ul class="pontos falta">
             <li><strong>Contagem física</strong>A comparação "contado × sistema" e a resolução da diferença.</li>
-            <li><strong>Acerto da parceria calculado</strong>A divisão das crias no fim do período. Hoje os dados estão lá, mas a conta não é feita pela plataforma.</li>
+            <li><strong>Acerto da parceria calculado</strong>A divisão das crias no fim do período. Hoje os dados estão lá, inclusive as crias registradas no parto, mas a conta não é feita pela plataforma.</li>
+            <li><strong>Números da reprodução</strong>Taxa de prenhez, lista de partos previstos, crias esperadas por contrato e desempenho dos filhos por touro.</li>
             <li><strong>Tela de membros</strong>O dono convidar gerente e vaqueiro pela tela.</li>
             <li><strong>Importar brincos e mover animal de lote</strong>Hoje o cadastro é um por um.</li>
             <li><strong>Teste no campo de verdade</strong>Os testes automáticos simulam o celular sem sinal e o acesso real pelo iPhone funcionou, mas falta o teste sem sinal num celular, no pasto. Nenhum resultado foi medido em fazenda ainda.</li>
@@ -697,7 +766,7 @@
 
       <section id="avaliar" class="slide escuro" aria-labelledby="avaliar-titulo">
         <div class="wrap">
-          <p class="caps sobre">10 · Como avaliar</p>
+          <p class="caps sobre">12 · Como avaliar</p>
           <h2 id="avaliar-titulo" class="titulo">Onde a opinião de quem é do campo pesa</h2>
           <span class="faixa" aria-hidden="true"></span>
           <ul class="pontos">
@@ -706,6 +775,7 @@
             <li><strong>Rendimento de carcaça</strong>50% como padrão faz sentido, ou outro valor é mais justo?</li>
             <li><strong>Custo por arroba</strong>Custos ÷ arrobas produzidas é o jeito certo de olhar? E o custo sem lote (salário, manutenção): rateia ou fica à parte?</li>
             <li><strong>Pesagem no curral</strong>Pesar um por um digitando o brinco é viável, ou a pesagem do lote resolve?</li>
+            <li><strong>Reprodução</strong>IATF, no cio e monta cobrem o que se faz na fazenda? O brinco do bezerro vai no parto ou na desmama?</li>
           </ul>
           <a class="botao" href="https://aplicaragro.vercel.app">Abrir aplicaragro.vercel.app</a>
         </div>
